@@ -1,0 +1,62 @@
+
+$primary: #FB5607;
+
+// Spacer
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer * .75,
+    4: $spacer,
+    5: $spacer * 1.25,
+    6: $spacer * 1.5,
+    7: $spacer * 1.75,
+    8: $spacer * 2,
+    9: $spacer * 2.25,
+    10: $spacer * 2.5,
+    11: $spacer * 2.75,
+    12: $spacer * 3
+);
+
+// Color
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #F5F4F7;
+$gray-500: #E8E8E8;
+$gray-600: #B7B7B7;
+$gray-700: #868686;
+$gray-800: #4A4A4A;
+$gray-900: #313131;
+$black:    #121212;
+
+$dark: $black;
+
+// Font Size
+$font-size-base: 1rem;
+$font-sizes: (
+    6: $font-size-base * .75,
+    5: $font-size-base * .875,
+    4: $font-size-base,
+    3: $font-size-base * 1.25,
+    2: $font-size-base * 1.5,
+    1: $font-size-base * 1.75
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+h1,h2,h3,p {
+    margin: 0;
+}
+.main-dashboard {
+    background-color: $gray-400;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
