@@ -1,6 +1,5 @@
 
 export default function Sidebar({activeMenu, onClick}) {
-    console.log(activeMenu, "active menu");
     return (
         <div className="col-12 col-xl-1">
             <div className="bg-primary py-4 px-4">

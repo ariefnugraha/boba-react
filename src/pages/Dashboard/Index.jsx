@@ -1,5 +1,6 @@
-import Sidebar from "../../components/layout/Sidebar"
-import Navbar from "../../components/layout/Navbar"
+import Sidebar from "../../components/layout/Sidebar";
+import Navbar from "../../components/layout/Navbar";
+import Cashier from "./content/Cashier";
 import { useState } from "react"
 export default function Index() {
     const [time, setTime] = useState();
@@ -26,10 +27,14 @@ export default function Index() {
         getTime();
         
     }, 1000);
+
     function handleMenu(newMenu) {
         setActiveMenu(newMenu)
-
-        console.log(activeMenu);
+    }
+    function ShowTabMenu(getMenu) {
+        if(activeMenu === 'dashboard') {
+            return (<Cashier/>)
+        }
     }
     return (
         <div className="main-dashboard row g-0">
@@ -38,6 +43,11 @@ export default function Index() {
             <div className="col-xl-11">
                 <div className="p-5">
                     <Navbar activeMenu={activeMenu} time={time} profileImage={profile.image} profileName={profile.name}/>
+
+                    <div className="mt-4">
+                        <ShowTabMenu activeMenu={activeMenu}/>
+
+                    </div>
                 </div>
             </div>
         </div>

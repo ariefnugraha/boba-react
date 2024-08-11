@@ -60,3 +60,9 @@ h1,h2,h3,p {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.category-list .item {
+    color: $gray-700;
+    border: $gray-800;
+    padding: $spacer;
+}

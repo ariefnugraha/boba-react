@@ -14794,4 +14794,10 @@ h1, .h1, h2, .h2, h3, .h3, p {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.category-list .item {
+  color: #868686;
+  border: #4A4A4A;
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
